@@ -5,7 +5,7 @@
 - Constant discount or fee regardless of the shopping cart total or product quantity
 ### Changed
 - Admin page improvements
-- Minor code and functionlity improvements
+- Minor code and functionality improvements
 
 ## [1.4.0] - 2019.12.07:
 ### Added
