@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This file is part of "Total Order Discount" project and subject to the terms
+and conditions defined in file "LICENSE.txt", which is part of this source
+code package and also available on the project page: https://git.io/JvumR
+-->
+
+<modification>
+	<name>[underr] Total Order Discount</name>
+	<code>total-order-discount</code>
+	<version>1.5.0</version>
+	<author>Andrii Burkatskyi aka underr</author>
+	<link>https://git.io/JvumR</link>
+
+    <file path="admin/controller/extension/total/sub_total.php|admin/view/template/extension/total/sub_total.twig|catalog/model/extension/total/sub_total.php">
+        <operation>
+            <ignoreif regex="false" info="sub-total sort order issue">
+                <![CDATA[total_sub_total_sort_order]]>
+            </ignoreif>
+            <search>
+                <![CDATA[sub_total_sort_order]]>
+            </search>
+            <add position="replace">
+                <![CDATA[total_sub_total_sort_order]]>
+            </add>
+        </operation>
+    </file>
+
+</modification>
