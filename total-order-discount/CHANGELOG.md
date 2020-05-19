@@ -1,5 +1,9 @@
 # Change log
 
+## [1.5.1] - 2020.05.19:
+### Fixed:
+- Validation issue
+
 ## [1.5.0] - 2020.05.06:
 ### Added
 - Constant discount or fee regardless of the shopping cart total or product quantity

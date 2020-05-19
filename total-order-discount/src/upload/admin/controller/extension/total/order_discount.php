@@ -31,6 +31,12 @@ class ControllerExtensionTotalOrderDiscount extends Controller {
 			$data['error_permission'] = '';
 		}
 
+		if (isset($this->error['discount_title'])) {
+			$data['error_discount_title'] = $this->error['discount_title'];
+		} else {
+			$data['error_discount_title'] = '';
+		}
+
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
@@ -84,10 +90,14 @@ class ControllerExtensionTotalOrderDiscount extends Controller {
 			$this->error['permission'] = $this->language->get('error_permission');
 		}
 
-		foreach ($this->request->post['total_order_discount_title'] as $language_id => $discount_title) {
-			if (utf8_strlen($discount_title) < 1 || utf8_strlen($discount_title) > 128) {
-				$this->error['discount_title'] = $this->language->get('error_discount_title');
+		if (isset($this->request->post['total_order_discount']['title']) && is_array($this->request->post['total_order_discount']['title'])) {
+			foreach ($this->request->post['total_order_discount']['title'] as $language_id => $discount_title) {
+				if (utf8_strlen($discount_title) < 1 || utf8_strlen($discount_title) > 128) {
+					$this->error['discount_title'] = $this->language->get('error_discount_title');
+				}
 			}
+		} else {
+			$this->error['discount_title'] = $this->language->get('error_discount_title');
 		}
 
 		return !$this->error;

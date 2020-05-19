@@ -8,6 +8,7 @@ code package and also available on the project page: https://git.io/JvumR
 $_['heading_title'] = '[underr] Total Order Discount';
 
 $_['error_permission'] = 'Warning: You do not have permission to modify Total Order Discount extension!';
+$_['error_discount_title'] = 'Enter discount/fee title';
 
 $_['entry_tab_parameters'] = 'Settings';
 $_['entry_tab_text'] = 'Text';

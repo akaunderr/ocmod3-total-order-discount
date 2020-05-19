@@ -8,6 +8,7 @@ code package and also available on the project page: https://git.io/JvumR
 $_['heading_title'] = '[underr] Total Order Discount';
 
 $_['error_permission'] = 'Увага: Недостатньо прав для редагування модуля Total Order Discount!';
+$_['error_discount_title'] = 'Введіть назву для знижки/комісії';
 
 $_['entry_tab_parameters'] = 'Параметри';
 $_['entry_tab_text'] = 'Текст';
