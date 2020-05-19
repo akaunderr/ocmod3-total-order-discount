@@ -1,7 +1,7 @@
 # Total Order Discount
 
 ## Description
-The Total Order Discount extension is for OpenCart 3.x CMS. It allows to set up a discount or fee based on the shopping cart total amount or product quantity in the cart.
+The "Total Order Discount" extension is for OpenCart CMS versions 3.0.x. It allows to set up a discount or fee based on the shopping cart total amount or product quantity in the cart.
 
 ## Features
 * Discount or fee based on the shopping cart total or product quantity in the cart
